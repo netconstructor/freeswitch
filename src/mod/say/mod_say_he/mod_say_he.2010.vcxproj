@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>mod_file_string</ProjectName>
-    <ProjectGuid>{70564D74-199A-4452-9C60-19ED5F242F0D}</ProjectGuid>
-    <RootNamespace>mod_file_string</RootNamespace>
+    <ProjectName>mod_say_he</ProjectName>
+    <ProjectGuid>{0E1117D4-56BF-4B5F-926C-273FD99593DE}</ProjectGuid>
+    <RootNamespace>mod_say_he</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -117,9 +117,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="mod_file_string.c" />
+    <ClCompile Include="mod_say_he.c" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\libs\win32\apr\libapr.2010.vcxproj">
+      <Project>{f6c55d93-b927-4483-bb69-15aef3dd2dff}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\w32\Library\FreeSwitchCore.2010.vcxproj">
       <Project>{202d7a4e-760d-4d0e-afa1-d7459ced30ff}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
